@@ -20,6 +20,6 @@ public class Addition extends Operation{
 
     
     public String toString() {
-        return "Oprande1:"+getOperande1()+" + Operande2:"+getOperande2();
+        return "Addition Oprande1:"+getOperande1()+" + Operande2:"+getOperande2();
     }
 }

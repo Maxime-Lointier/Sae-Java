@@ -27,7 +27,7 @@ public class Division extends Operation{
 
     
     public String toString() {
-        return "Oprande1:"+getOperande1()+" / Operande2:"+getOperande2();
+        return "Division Oprande1:"+getOperande1()+" / Operande2:"+getOperande2();
     }
     
 }
