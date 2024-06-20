@@ -2,6 +2,7 @@ public class CalculatriceSimple {
     public static void main(String[] args) {
         Nombre six = new Nombre(6) ;  
         Nombre dix = new Nombre(10) ;
+        Nombre zero = new Nombre(0) ;
         try{
             Operation s = new Soustraction(dix,six) ;  
             System.out.println(s + " = " + s.valeur()) ; // doit afficher : (10 – 6) = 4 
@@ -30,6 +31,14 @@ public class CalculatriceSimple {
             Operation d = new Division(dix,six);
             System.out.println(d + " = " + d.valeur()) ; //doit afficher (10/6) = 1.66 
     
+        }
+        catch(Exception e){
+            System.out.println("exeption dans la division");
+        }
+
+        try{
+            Operation d = new Division(dix,zero);
+            System.out.println(d + " = " + d.valeur()) ; //doit retourner une erreure
         }
         catch(Exception e){
             System.out.println("exeption dans la division");

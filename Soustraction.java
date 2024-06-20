@@ -9,6 +9,6 @@ public class Soustraction extends Operation{
     }
     
     public String toString(){
-        return "Soustraction Oprande1:"+getOperande1()+" + Operande2:"+getOperande2();
+        return "Soustraction Oprande1:"+getOperande1()+" - Operande2:"+getOperande2();
     }
 }
